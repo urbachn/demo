@@ -9,20 +9,19 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "transaction")
-public class Transaction
-{
+public class Transaction {
     @Id
-    @Column(name ="id")
+    @Column(name = "id")
     private String id;
-    @Column(name ="userId")
+    @Column(name = "userId")
     private String userId;
-    @Column(name ="name")
+    @Column(name = "name")
     private String name;
-    @Column(name ="amount")
+    @Column(name = "amount")
     private String amount;
-    @Column(name ="ip")
+    @Column(name = "ip")
     private String ip;
-    @Column(name ="response")
+    @Column(name = "response")
     private String response;
 
     public Transaction() {
@@ -34,15 +33,6 @@ public class Transaction
         this.name = name;
         this.amount = amount;
         this.ip = ip;
-    }
-
-    public Transaction(String id, String userId, String name, String amount, String ip, String response) {
-        this.id = id;
-        this.userId = userId;
-        this.name = name;
-        this.amount = amount;
-        this.ip = ip;
-        this.response = response;
     }
 
     public String getId() {
